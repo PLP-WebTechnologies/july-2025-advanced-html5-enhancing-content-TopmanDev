@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Multi-Section Demo</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>HTML5 Features Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#form">Contact Form</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- LISTS SECTION -->
+    <section id="lists">
+        <h2>Lists in HTML</h2>
+
+        <h3>Unordered List</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol type="a">
+            <li>Plan project</li>
+            <li>Write code</li>
+            <li>Test application</li>
+        </ol>
+
+        <h3>Description List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Structure of a web page</dd>
+            <dt>CSS</dt>
+            <dd>Styling and layout</dd>
+            <dt>JavaScript</dt>
+            <dd>Interactivity and logic</dd>
+        </dl>
+    </section>
+    <hr>
+
+    <!-- TABLES SECTION -->
+    <section id="tables">
+        <h2>Table Example</h2>
+        <table border="1" cellpadding="5">
+            <caption>Web Technologies Comparison</caption>
+            <thead>
+                <tr>
+                    <th>Technology</th>
+                    <th>Use</th>
+                    <th>Difficulty (1-5)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Structure</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Design</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Logic</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr>
+
+    <!-- MEDIA SECTION -->
+    <section id="media">
+        <h2>Media in HTML</h2>
+
+        <h3>Image</h3>
+        <img src="assets/casual-life-3D-free-illustrations.jpg" alt="Placeholder image">
+
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="assets/Faouzia-John-Legend-Minefields-via-Naijafinix.com_.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video</h3>
+        <video controls width="320">
+            <source src="assets/5a288a59e115480794971a00c44b745b_1605045901418.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <hr>
+
+    <!-- FORM SECTION -->
+    <section id="form">
+        <h2>Contact Form</h2>
+        <form action="/submit" method="post">
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required title="Make sure you enter your fullname" aria-describedby="phone-help">
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required title="Ensure you enter your personal email" aria-describedby="phone-help">
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" inputmode="numeric" minlength="11" maxlength="11" placeholder="08012345678" required title="Enter exactly 11 digits. Example: 08012345678" aria-describedby="phone-help"
+/>
+            </fieldset>
+            <br>
+
+            <!-- Preferences -->
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="service">Preferred Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">--Select--</option>
+                    <option value="web">Web Development</option>
+                    <option value="design">Web Design</option>
+                    <option value="seo">SEO Optimization</option>
+                </select>
+                <br><br>
+
+                <span>Subscribe to Newsletter:</span><br>
+                <input type="radio" id="yes" name="newsletter" value="yes" required>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="newsletter" value="no">
+                <label for="no">No</label>
+            </fieldset>
+            <br>
+
+            <!-- Message -->
+            <fieldset>
+                <legend>Your Message</legend>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required minlength="10"></textarea>
+            </fieldset>
+            <br>
+
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; HTML5 Demo Page</p>
+    </footer>
+
+</body>
+</html>
